@@ -1,0 +1,11 @@
+*.jdw~
+*.jdp~
+*.jad
+*.jar
+*.cod
+*.cso
+*.csl
+*.debug
+*.rapc
+eclipse_project/
+doc

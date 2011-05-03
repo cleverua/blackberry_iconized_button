@@ -1,0 +1,17 @@
+== DESCRIPTION
+
+This is a custom IconizedButtonFieldSet component for Java BlackBerry development.
+With this component we are able to create the same native BB API ButtonFields except of a bonus ability to inject an icon into the ButtonField.
+
+
+IconizedButtonFieldSet[http://assets.cleverua.com/images/bb_iconized_button_screenshot.jpg]
+
+=== Usage
+
+IconizedButtonFieldSet component is a custom VerticalFieldManager.
+Its constructor accepts an array of IButtonFieldDataProviders. Each IButtonFieldDataProvider represents an iconized ButtonField and tells the IconizedButtonFieldSet what label, icon and on-click action to use for the button.
+
+
+== EXAMPLES
+
+The source code contains DemoApp as a sample application.

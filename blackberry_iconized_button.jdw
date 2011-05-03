@@ -1,0 +1,23 @@
+## RIM Java Development Environment
+# RIM Workspace file
+#
+# This file is generated and managed by BlackBerry developer tools.
+# It SHOULD NOT BE modified manually.
+#
+[BuildConfigurations
+Debug
+Release
+]
+DependenciesInWorkspace=0
+[ImplicitRules
+]
+[Imports
+]
+[ManifestImports
+]
+[Projects
+blackberry_iconized_button.jdp
+]
+[ReleaseActiveProjects
+blackberry_iconized_button.jdp
+]

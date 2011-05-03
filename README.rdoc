@@ -4,7 +4,7 @@ This is a custom IconizedButtonFieldSet component for Java BlackBerry developmen
 With this component we are able to create the same native BB API ButtonFields except of a bonus ability to inject an icon into the ButtonField.
 
 
-IconizedButtonFieldSet[http://assets.cleverua.com/images/bb_iconized_button_screenshot.jpg]
+IconizedButtonFieldSet[http://assets.cleverua.com/images/bb_iconized_button_screenshot.png]
 
 === Usage
 

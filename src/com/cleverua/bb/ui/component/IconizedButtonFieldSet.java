@@ -1,6 +1,7 @@
 package com.cleverua.bb.ui.component;
 
 import net.rim.device.api.system.Bitmap;
+import net.rim.device.api.system.DeviceInfo;
 import net.rim.device.api.ui.Color;
 import net.rim.device.api.ui.DrawStyle;
 import net.rim.device.api.ui.Field;
@@ -14,6 +15,8 @@ import net.rim.device.api.util.Arrays;
 
 public class IconizedButtonFieldSet extends VerticalFieldManager {
     
+    private static final boolean IS_OS_6 = DeviceInfo.getSoftwareVersion().startsWith("6");
+
     public interface IButtonFieldDataProvider {
         String getLabel();
         Bitmap getIcon();
@@ -121,7 +124,9 @@ public class IconizedButtonFieldSet extends VerticalFieldManager {
                         
                         final int colorBackup = g.getColor();
                         try {
-                            g.setColor(isFocus() ? Color.WHITE : Graphics.WHITE);
+                            // on OS 6 RIM changed the color scheme of buttons, 
+                            // so we also need to correspond to that change
+                            g.setColor(isFocus() ? Color.WHITE : (IS_OS_6 ? Graphics.BLACK : Graphics.WHITE));
                             g.drawText(
                                 dataProvider.getLabel(),
                                 padding + iconWidth + padding, 
